@@ -6,3 +6,8 @@ class City(models.Model):
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        verbose_name = 'Погода в городе'
+        verbose_name_plural = 'Погода в городах'
+        ordering = ['name']
